@@ -59,12 +59,11 @@ This course focuses on improving communication skills, grammar accuracy, and con
 
 | Lesson | Exercise | Solution | Remark |
 |--------|----------|----------|--------|
-| [L1: Fantastic Family](6b_lesson/ch4/l1.html) | [Exercise1](6b_lesson/ch4/e1.html) | [solution1](6b_lesson/ch4/s1.html) | <span class="status done">Completed</span> |
-| [L2: Poetry Competition](6b_lesson/ch4/l2.html) | [Exercise2](6b_lesson/ch4/e2.html) | [solution2](6b_lesson/ch4/s2.html) | <span class="status done">Completed</span> |
-| [L3: Master Mind (Story)](6b_lesson/ch4/l3.html) | [Exercise3](6b_lesson/ch4/e3.html) | [solution3](6b_lesson/ch4/s3.html) | <span class="status done">Completed</span> |
-| [L4: Story Comprehension](6b_lesson/ch4/l4.html) | [Exercise4](6b_lesson/ch4/e4.html) | [solution4](6b_lesson/ch4/s4.html) | <span class="status done">Completed</span> |
-| [L5: Superhero Interview](6b_lesson/ch4/l5.html) | [Exercise5](6b_lesson/ch4/e5.html) | [solution5](6b_lesson/ch4/s5.html) | <span class="status done">Completed</span> |
-
+| [L1: Fantastic Family](6b_lesson/ch4/l1.html) | [Ex1](6b_lesson/ch4/e1.html) | [S1](6b_lesson/ch4/s1.html) | <span class="status done">Completed</span> |
+| [L2: Poetry Competition]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status done">Completed</span> |
+| [L3: Master Mind (Story)]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+| [L4: Story Comprehension]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+| [L5: Superhero Interview]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
 ## Course Rules
 
 - Students are expected to attend classes regularly
