@@ -11,6 +11,21 @@
   text-align: center;
 }
 
+.hero-logo {
+  width: 90px;          /* adjust size here */
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+}
+
+/* Optional: responsive logo */
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 70px;
+  }
+}
+
+
 .hero-content {
   max-width: 900px;
   padding: 2rem;
@@ -19,6 +34,9 @@
 .hero h1 {
   font-size: clamp(2rem, 3vw, 3.8rem);
   margin-bottom: 0.5rem;
+}
+.hero-spacer {
+  height: 5vh; /* MUST match hero height */
 }
 
 .subtitle {
@@ -38,4 +56,21 @@
 .date {
   font-size: 1rem;
   opacity: 0.9;
+}
+
+.status {
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status.done {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.status.loading {
+  background: #f1f3f4;
+  color: #6b7280;
 }

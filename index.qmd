@@ -9,14 +9,21 @@ format:
 ```{=html}
 <div class="hero">
   <div class="hero-content">
+    <img src="img/logo-sps.png" alt="School Logo" class="hero-logo">
+
     <h1>General English Program</h1>
     <p class="subtitle">Level 6B</p>
+
     <div class="meta">
       <span class="instructor">Instructor: Phoeun Rajame</span>
-      <span class="date">📅 1 February 2026</span>
+      <span class="date">Published: 3 February 2026</span>
     </div>
   </div>
 </div>
+
+<!-- spacer to push TOC below hero -->
+<div class="hero-spacer"></div>
+
 ```
 
 ## About This Course
@@ -24,7 +31,54 @@ format:
 Welcome to the **General English Program – Level 6B**.  
 This course focuses on improving communication skills, grammar accuracy, and confidence in real-life English usage.
 
-## Lessons
-- Lesson 1: Reading & Vocabulary  
-- Lesson 2: Grammar in Context  
-- Lesson 3: Speaking Practice  
+## Course Criteria
+- **Level**: Intermediate
+- **Duration**: 12 weeks
+- **Class Schedule**: Mondays to Fridays, 5:30 PM - 7:00 PM
+- **Assessment**: Weekly quizzes, mid-term exam, final exam
+
+**Score Breakdown:**
+
+| Component                         | Weight (%) |
+|----------------------------------|------------|
+| Attendance (AT)                  | 10         |
+| Class Participation (CP)         | 5          |
+| Presentation / Assessment (P/A)  | 10         |
+| Quiz (Q) + Homework (HW)         | 15         |
+| Midterm Exam (ME)                | 15         |
+| Final Exam (FE)                  | 15         |
+| **Foreigner Teacher Score Record** (FTSR) | 30   |
+
+<span style="color:red; font-weight:600;">
+**Note**: A minimum overall score of 60% is required to pass the course.
+</span>
+
+## Course Sessions
+
+### 📘 Chapter 4: Superheros, Special Powers!
+
+| Lesson | Exercise | Solution | Remark |
+|--------|----------|----------|--------|
+| [L1: Fantastic Family](6b_lesson/ch4/l1.html) | [Exercise1](6b_lesson/ch4/e1.html) | [solution1](6b_lesson/ch4/s1.html) | <span class="status done">Completed</span> |
+| [L2: Poetry Competition](6b_lesson/ch4/l2.html) | [Exercise2](6b_lesson/ch4/e2.html) | [solution2](6b_lesson/ch4/s2.html) | <span class="status done">Completed</span> |
+| [L3: Master Mind (Story)](6b_lesson/ch4/l3.html) | [Exercise3](6b_lesson/ch4/e3.html) | [solution3](6b_lesson/ch4/s3.html) | <span class="status done">Completed</span> |
+| [L4: Story Comprehension](6b_lesson/ch4/l4.html) | [Exercise4](6b_lesson/ch4/e4.html) | [solution4](6b_lesson/ch4/s4.html) | <span class="status done">Completed</span> |
+| [L5: Superhero Interview](6b_lesson/ch4/l5.html) | [Exercise5](6b_lesson/ch4/e5.html) | [solution5](6b_lesson/ch4/s5.html) | <span class="status done">Completed</span> |
+
+## Course Rules
+
+- Students are expected to attend classes regularly
+- Active participation is required
+- Late homework may not be accepted
+- Academic honesty must be maintained
+
+## Resources
+
+- Oxford Online Practice
+- Cambridge Dictionary
+- Grammarly
+- BBC Learning English
+
+## Contact
+
+For questions or support, please contact the instructor during class hours or via the official communication channel.
