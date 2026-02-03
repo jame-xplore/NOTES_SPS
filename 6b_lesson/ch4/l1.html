@@ -84,18 +84,70 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="lesson-overview">Lesson Overview</h2>
 <p><strong>Content</strong>: talking about a family of 4 with super powers to save the world.</p>
 <p>In this lesson, you are going to learn various words to describe super powers in English. You will also practice using these words in sentences.</p>
-<p><img src="c4l1.png" class="img-fluid"></p>
+<p><img src="./img/c4l1.png" class="img-fluid"></p>
+<!-- ## Vocabulary List
+* **Special powers** — *Noun*: abilities that normal people do not have
+* **Brave** — *Adjective*: not afraid of danger
+* **Invisible** — *Adjective*: cannot be seen
+* **Control minds** — *Verb phrase*: to control what others think or do
+* **Intelligent** — *Adjective*: very smart
+* **Villains** — *Noun*: bad people or characters
+* **Secret identity** — *Noun*: a hidden real identity -->
 </section>
 <section id="vocabulary-list" class="level2">
 <h2 class="anchored" data-anchor-id="vocabulary-list">Vocabulary List</h2>
+<script>
+function playAudio(id){
+  var a = document.getElementById(id);
+  a.currentTime = 0;
+  a.play();
+}
+</script>
+
 <ul>
-<li><strong>Special powers</strong> — <em>Noun</em>: abilities that normal people do not have</li>
-<li><strong>Brave</strong> — <em>Adjective</em>: not afraid of danger</li>
-<li><strong>Invisible</strong> — <em>Adjective</em>: cannot be seen</li>
-<li><strong>Control minds</strong> — <em>Verb phrase</em>: to control what others think or do</li>
-<li><strong>Intelligent</strong> — <em>Adjective</em>: very smart</li>
-<li><strong>Villains</strong> — <em>Noun</em>: bad people or characters</li>
-<li><strong>Secret identity</strong> — <em>Noun</em>: a hidden real identity</li>
+
+<li>
+<b onclick="playAudio('sp')" style="cursor:pointer;">🔊: Special powers</b>
+/ˈspeʃəl ˈpaʊərz/ — <i>Noun</i>: abilities that normal people do not have
+<audio id="sp" src="./audio/special_powers.mp3"></audio>
+</li>
+
+<li>
+<b onclick="playAudio('br')" style="cursor:pointer;">🔊: Brave</b>
+/breɪv/ — <i>Adjective</i>: not afraid of danger
+<audio id="br" src="./audio/brave.mp3"></audio>
+</li>
+
+<li>
+<b onclick="playAudio('inv')" style="cursor:pointer;">🔊: Invisible</b>
+/ɪnˈvɪzəbəl/ — <i>Adjective</i>: cannot be seen
+<audio id="inv" src="./audio/invisible.mp3"></audio>
+</li>
+
+<li>
+<b onclick="playAudio('cm')" style="cursor:pointer;">🔊: Control minds</b>
+/kənˈtroʊl maɪndz/ — <i>Verb phrase</i>: to control what others think or do
+<audio id="cm" src="./audio/control-minds.mp3"></audio>
+</li>
+
+<li>
+<b onclick="playAudio('int')" style="cursor:pointer;">🔊: Intelligent</b>
+/ɪnˈtelɪdʒənt/ — <i>Adjective</i>: very smart
+<audio id="int" src="./audio/intelligent.mp3"></audio>
+</li>
+
+<li>
+<b onclick="playAudio('vil')" style="cursor:pointer;">🔊: Villains</b>
+/ˈvɪlənz/ — <i>Noun</i>: bad people or characters
+<audio id="vil" src="./audio/villains.mp3"></audio>
+</li>
+
+<li>
+<b onclick="playAudio('sid')" style="cursor:pointer;">🔊: Secret identity</b>
+/ˈsiːkrət aɪˈdentəti/ — <i>Noun</i>: a hidden real identity
+<audio id="sid" src="./audio/secret-identity.mp3"></audio>
+</li>
+
 </ul>
 </section>
 <section id="example-sentences" class="level2">
@@ -239,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="question">
   1. The superhero's 
   <input id="q1" placeholder="type answer"> 
-  allows her to sneak into places without being noticed.
+  (singular) allows her to sneak into places without being noticed.
   <span id="fb1"></span>
 </div>
 
@@ -276,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
   function checkBlanks() {
     const answers = [
-      "invisibility",
+      "special power",
       "villains",
       "intelligent",
       "secret identity",
