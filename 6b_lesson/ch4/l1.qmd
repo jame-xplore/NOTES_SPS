@@ -1,0 +1,13 @@
+
+---
+title: "Lesson 1: Introduction to Data Visualization"
+format:
+    html:
+        toc: true
+        html-math-method: katex
+        css: styles.css
+---
+
+## Overview
+In this lesson, we will explore the fundamentals of data visualization. We will cover the importance of visualizing data, common types of visualizations, and best practices for creating effective charts and graphs.
+

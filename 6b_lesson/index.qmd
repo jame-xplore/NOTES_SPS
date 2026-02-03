@@ -1,0 +1,30 @@
+---
+page-layout: full
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+---
+
+```{=html}
+<div class="hero">
+  <div class="hero-content">
+    <h1>General English Program</h1>
+    <p class="subtitle">Level 6B</p>
+    <div class="meta">
+      <span class="instructor">Instructor: Phoeun Rajame</span>
+      <span class="date">📅 1 February 2026</span>
+    </div>
+  </div>
+</div>
+```
+
+## About This Course
+
+Welcome to the **General English Program – Level 6B**.  
+This course focuses on improving communication skills, grammar accuracy, and confidence in real-life English usage.
+
+## Lessons
+- Lesson 1: Reading & Vocabulary  
+- Lesson 2: Grammar in Context  
+- Lesson 3: Speaking Practice  

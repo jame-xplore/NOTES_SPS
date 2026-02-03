@@ -1,0 +1,41 @@
+.hero {
+  width: 100vw;
+  min-height: 20vh;
+  margin-left: calc(-50vw + 50%);
+  background: linear-gradient(120deg, #cb343e, #2a1673);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 3vw, 3.8rem);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.meta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.instructor,
+.date {
+  font-size: 1rem;
+  opacity: 0.9;
+}
