@@ -1,9 +1,5 @@
 ---
 page-layout: article
-format:
-    html:
-        toc: true
-        html-math-method: katex
 ---
 
 ```{=html}
