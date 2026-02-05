@@ -1,0 +1,91 @@
+---
+title: "Lesson 2: 2nd Conditional"
+slug: ch4-lesson2-2nd-conditional
+format:
+    html:
+        toc: true
+        html-math-method: katex
+---
+
+### What is the second conditional?
+
+The **second conditional** is used to talk about **imaginary**, **unreal**, or **unlikely situations** in the present or future. It is often used when we imagine things that are not true right now — like having superpowers.
+
+**Example:** If I were invisible, I would help people without being seen.
+
+In this example, the speaker is not actually invisible. It is only an imaginary situation.
+
+---
+
+### When to use the second conditional?
+
+1. To talk about unreal or imaginary situations.
+2. To give advice or imagine different results.
+3. To describe superhero abilities that do not exist in real life.
+
+* Example Sentences:
+
+  * If she had super strength, she would lift heavy buildings.
+  * If they were superheroes, they would protect the city.
+  * If he could fly, he would rescue people from danger.
+
+---
+
+### How to form the second conditional?
+
+The second conditional uses the **past simple** in the if-clause and **would + base verb** in the main clause.
+
+<span style='color:blue; font-weight:600;'>Formula:</span>
+**If + subject + past simple, subject + would + base verb**
+
+* Example Sentences:
+
+  * If I were a superhero, I would save the world.
+  * If she had laser eyes, she would stop the villains.
+  * If we lived in a superhero city, we would feel safer.
+
+---
+
+### Superhero Practice
+
+Now try to imagine your own superhero world! Complete the sentences below:
+
+1. If I had the power to fly, I would __________.
+2. If I were invisible, I would __________.
+3. If I could control time, I would __________.
+
+---
+
+### Negative Sentences
+
+To make negative sentences, use **would not (wouldn’t)**.
+
+<span style='color:blue; font-weight:600;'>Formula:</span>
+**If + subject + past simple, subject + would not + base verb**
+
+* Example Sentences:
+
+  * If he were a villain, he wouldn’t help people.
+  * If they had no powers, they wouldn’t win the battle.
+
+---
+
+### Questions
+
+To form questions, move **would** to the front of the main clause.
+
+<span style='color:blue; font-weight:600;'>Formula:</span>
+**What would + subject + do if + subject + past simple?**
+
+* Example Sentences:
+
+  * What would you do if you had super speed?
+  * Where would she go if she could teleport?
+
+## Helpful Resources
+
+Video and Articles to help you understand the second conditional better:
+
+- [Youtube](https://youtu.be/3aX-3bX6nOA?si=U1Yk2bXJH6qYyD4I)
+- [Second Conditional - English Grammar](https://www.grammarly.com/blog/grammar/second-conditional/)
+- [Practice with Second Conditional](https://www.perfect-english-grammar.com/second-conditional-exercise-1.html)

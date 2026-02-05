@@ -17,9 +17,9 @@ website:
       - text: "Chapters"
         menu:
           - text: "Chapter 4: Superheroes"
-            href: /6b_lesson/ch4/l1.html
+            href: /index.html#ch4
           - text: "Chapter 5: Powerful Earth"
-            href: /6b_lesson/ch5/l2.html
+            href: /index.html#ch5
     right:
       - text: "GitHub"
         href: "https://github.com/jame-xplore/NOTES_SPS"
@@ -43,6 +43,7 @@ website:
           - section: "Chapter 4: Superheroes, Special Powers!"
             contents:
               - 6b_lesson/ch4/l1.qmd
+              - 6b_lesson/ch4/l2.qmd
           - section: "Chapter 5: Powerful Earth!"
             contents:
               - 6b_lesson/ch5/l2.qmd

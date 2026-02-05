@@ -1,8 +1,9 @@
 ---
-title: "General English Program - Level 6B"
-subtitle: "English Teaching Materials"
-description: "Interactive English lessons with vocabulary, grammar exercises, and audio materials"
 page-layout: article
+format:
+    html:
+        toc: true
+        html-math-method: katex
 ---
 
 ```{=html}
@@ -54,22 +55,24 @@ This course focuses on improving communication skills, grammar accuracy, and con
 
 ## Course Sessions
 
-### 📘 Chapter 4: Superheros, Special Powers!
+### 📘 Chapter 4: Superheros, Special Powers! {#ch4}
 
-| Lesson | Exercise | Solution | Remark |
-|--------|----------|----------|--------|
-| [L1: Fantastic Family](6b_lesson/ch4/l1.html) | [Ex1](6b_lesson/ch4/e1.html) | [S1](6b_lesson/ch4/s1.html) | <span class="status done">Completed</span> |
-| [L2: Poetry Competition]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status done">Completed</span> |
-| [L3: Master Mind (Story)]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
-| [L4: Story Comprehension]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
-| [L5: Superhero Interview]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+| Lesson | Exercise | Remark |
+|--------|----------|--------|
+| [L1: Fantastic Family](6b_lesson/ch4/l1.html) | [Ex1](6b_lesson/ch4/e1.qmd) | <span class="status done">Completed</span> |
+| [L2: 2nd Conditional (Grammar)](6b_lesson/ch4/l2.html) | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+| L3: Master Mind (Story) | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+| L4: Story Comprehension | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+| L5: Listen and Read | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+| L6: Animal Special Powers! | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+| L7: What is Memory? | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
 
-### 📘 Chapter 5: Powerful Earth!
+### 📘 Chapter 5: Powerful Earth! {#ch5}
 
-| Lesson | Exercise | Solution | Remark |
-|--------|----------|----------|--------|
-| [L1: ](6b_lesson/ch4/l1.html) | [Ex1](6b_lesson/ch4/e1.html) | [S1](6b_lesson/ch4/s1.html) | <span class="status done">Completed</span> |
-| [L2: Past Perfect](6b_lesson/ch5/l2.html) | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+| Lesson | Exercise | Remark |
+|--------|----------|--------|
+| L1: Disaster Plan | <span class='ex na'>N/A</span> | <span class="status done">Completed</span> |
+| [L2: Past Perfect](6b_lesson/ch5/l2.html) | [Ex2](6b_lesson/ch5/e2.qmd) | <span class="status loading">Loading...</span> |
 
 ## Course Rules
 

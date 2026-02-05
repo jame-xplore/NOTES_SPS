@@ -30,9 +30,10 @@ body {
    ============================================ */
 
 .hero {
-  width: 100vw;
+  width: 100%;
   min-height: 20vh;
-  margin-left: calc(-50vw + 50%);
+  margin-left: auto;
+  margin-right: auto;
   background: linear-gradient(120deg, #cb343e, #2a1673);
   color: white;
   display: flex;
@@ -142,47 +143,53 @@ h4 {
 }
 
 /* ============================================
-   CENTER MAIN CONTENT AREA
+   ARTICLE LAYOUT - CENTERED READING COLUMN
    ============================================ */
 
-/* All pages use page-layout: article with sidebar navigation.
-   Content is centered with a fixed reading width (900px). */
+/* Why Quarto reserves right margin:
+   Quarto's default article layout creates a 3-column grid:
+   [sidebar] [main content] [margin notes]
+   The right column is reserved for asides/footnotes even when unused.
+   We hide it and center the main content for a professional textbook layout. */
 
-/* Center the quarto container for article layout pages */
-.page-layout-article #quarto-content {
-  display: flex;
-  justify-content: center;
+/* Container for article layout - hide extra right column */
+.page-layout-article .page-columns {
+  grid-template-columns: 1fr;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Center the content area within article layout */
+/* Main content area - centered reading width */
 .page-layout-article main.content {
-  max-width: 900px;
+  max-width: 850px;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
-/* Ensure the page-columns wrapper doesn't override */
-.page-layout-article .page-columns {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-/* Keep sidebar in its normal position (left docked) */
-#quarto-sidebar {
-  margin-left: 0 !important;
-}
-
-/* Hide unused margin sidebar (right column for asides/footnotes) */
+/* Hide unused right margin sidebar */
 #quarto-margin-sidebar {
   display: none;
 }
 
-/* Allow main content to expand into unused margin space */
-.page-layout-article .page-columns {
-  grid-template-columns: 1fr;
+/* Ensure quarto-content doesn't restrict width */
+.page-layout-article #quarto-content {
+  max-width: 100%;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .page-layout-article main.content {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-layout-article main.content {
+    padding: 0 0.75rem;
+  }
 }
 
 /* ============================================

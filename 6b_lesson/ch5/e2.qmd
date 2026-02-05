@@ -1,0 +1,209 @@
+---
+title: "Past Perfect Practice"
+format:
+  html:
+    toc: true
+---
+
+
+## Interactive Practice — Past Perfect
+
+Remember the formula:
+
+<span style="color:blue; font-weight:600;">Subject + had + past participle</span>
+
+---
+
+## Part A — Choose the Correct Answer
+
+```{=html}
+<div class="quiz-box">
+
+<p>1. The town ______ the warnings before the earthquake struck.</p>
+
+<button onclick="checkMCQ(this,'b')">a) ignore</button>
+<button onclick="checkMCQ(this,'b')">b) had ignored</button>
+<button onclick="checkMCQ(this,'b')">c) ignores</button>
+
+</div>
+
+<div class="quiz-box">
+
+<p>2. The families ______ the village before the flood reached the bridge.</p>
+
+<button onclick="checkMCQ(this,'a')">a) had left</button>
+<button onclick="checkMCQ(this,'a')">b) leave</button>
+<button onclick="checkMCQ(this,'a')">c) leaving</button>
+
+</div>
+
+<div class="quiz-box">
+
+<p>3. By the time the firefighters arrived, the storm ______ the power out.</p>
+
+<button onclick="checkMCQ(this,'b')">a) goes</button>
+<button onclick="checkMCQ(this,'b')">b) had knocked</button>
+<button onclick="checkMCQ(this,'b')">c) knock</button>
+
+</div>
+
+<div class="quiz-box">
+
+<p>4. We ______ the emergency kit before the hurricane arrived.</p>
+
+<button onclick="checkMCQ(this,'c')">a) pack</button>
+<button onclick="checkMCQ(this,'c')">b) packed</button>
+<button onclick="checkMCQ(this,'c')">c) had packed</button>
+
+</div>
+
+<div class="quiz-box">
+
+<p>5. The rescue team ______ the injured before nightfall.</p>
+
+<button onclick="checkMCQ(this,'a')">a) had located</button>
+<button onclick="checkMCQ(this,'a')">b) locate</button>
+<button onclick="checkMCQ(this,'a')">c) locates</button>
+
+</div>
+```
+---
+
+## Part B — Type Your Answer
+
+Fill in using **past perfect**:
+
+```{=html}
+<p>1. By the time the teacher arrived, the students
+<input id="q1" placeholder="verb = evacuate">
+<button onclick="checkText('q1','had evacuated')">Check</button>
+<span id="r1"></span>
+</p>
+
+<p>2. He
+<input id="q2" placeholder="verb = make">
+the emergency call before the storm hit.
+<button onclick="checkText('q2','had made')">Check</button>
+<span id="r2"></span>
+</p>
+
+<p>3. We
+<input id="q3" placeholder="verb = prepare">
+the shelters before the typhoon arrived.
+<button onclick="checkText('q3','had prepared')">Check</button>
+<span id="r3"></span>
+</p>
+
+<p>4. She
+<input id="q4" placeholder="verb = send">
+the warning message before the tsunami reached the coast.
+<button onclick="checkText('q4','had sent')">Check</button>
+<span id="r4"></span>
+</p>
+
+<p>5. They
+<input id="q5" placeholder="verb = secure">
+the supplies before the roads closed.
+<button onclick="checkText('q5','had secured')">Check</button>
+<span id="r5"></span>
+</p>
+```
+
+---
+
+## 🦸 Part C — Superhero Challenge (AI Feedback)
+
+Write your own past perfect sentences and click **Check with AI**.
+
+```{=html}
+<div id="ai-practice">
+
+<p>1. <textarea id="s1" placeholder="Type your sentence here" style="width:100%; height:70px;"></textarea></p>
+<p>2. <textarea id="s2" placeholder="Type your sentence here" style="width:100%; height:70px;"></textarea></p>
+<p>3. <textarea id="s3" placeholder="Type your sentence here" style="width:100%; height:70px;"></textarea></p>
+<p>4. <textarea id="s4" placeholder="Type your sentence here" style="width:100%; height:70px;"></textarea></p>
+<p>5. <textarea id="s5" placeholder="Type your sentence here" style="width:100%; height:70px;"></textarea></p>
+
+<button onclick="checkWithAI()" style="margin-top:10px;">🤖 Check with AI</button>
+
+<div id="ai-feedback" style="margin-top:15px;"></div>
+
+</div>
+
+<script>
+async function checkWithAI(){
+
+  const sentences = [
+    document.getElementById("s1").value,
+    document.getElementById("s2").value,
+    document.getElementById("s3").value,
+    document.getElementById("s4").value,
+    document.getElementById("s5").value
+  ];
+
+  document.getElementById("ai-feedback").innerHTML = "Checking... ⏳";
+
+  const res = await fetch("https://YOUR-AI-ENDPOINT/check", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ sentences })
+  });
+
+  const data = await res.json();
+  document.getElementById("ai-feedback").innerHTML = data.feedback;
+}
+</script>
+```
+
+## Back to Lesson
+
+[⬅ Return to Past Perfect Lesson](l2.qmd)
+
+---
+
+```{=html}
+<script>
+
+function checkMCQ(btn, correct){
+  const text = btn.innerText.trim();
+  if(text.startsWith(correct)){
+    btn.style.background = "#c8f7c5";
+  }else{
+    btn.style.background = "#ffd6d6";
+  }
+}
+
+function checkText(id, answer){
+  const input = document.getElementById(id);
+  const result = document.getElementById("r"+id.replace("q",""));
+  if(input.value.toLowerCase().trim() === answer){
+    result.innerHTML = " ✅";
+  }else{
+    result.innerHTML = " ❌";
+  }
+}
+
+function toggleAnswers(){
+  const box = document.getElementById("answers");
+  box.style.display = box.style.display === "none" ? "block" : "none";
+}
+
+</script>
+
+<style>
+
+.quiz-box{
+  margin:12px 0;
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+
+.quiz-box button{
+  margin:4px;
+  padding:6px 10px;
+  cursor:pointer;
+}
+
+</style>
+```
