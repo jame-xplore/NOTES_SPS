@@ -12,7 +12,7 @@ format:
 
 In this lesson, you are going to learn various words to describe super powers in English. You will also practice using these words in sentences.
 
-![](/6b_lesson/ch4/img/c4l1.png)
+![](img/c4l1.png)
 
 <!-- ## Vocabulary List
 * **Special powers** — *Noun*: abilities that normal people do not have
@@ -34,7 +34,15 @@ function playAudio(id) {
     audio.currentTime = 0;
   });
   // Play the selected audio
-  document.getElementById(id).play();
+  const audio = document.getElementById(id);
+  if (audio) {
+    audio.play().catch(err => {
+      console.error('Audio playback failed:', err);
+      console.log('Audio src:', audio.src);
+    });
+  } else {
+    console.error('Audio element not found:', id);
+  }
 }
 </script>
 
@@ -43,43 +51,43 @@ function playAudio(id) {
 <li class="vocab-item">
 <button class="play-btn" onclick="playAudio('sp')">🔊</button>
 <b>Special powers</b> /ˈspeʃəl ˈpaʊərz/ — <i>Noun</i>: abilities that normal people do not have
-<audio id="sp" src="/6b_lesson/ch4/audio/special_powers.mp3"></audio>
+<audio id="sp" src="audio/special_powers.mp3"></audio>
 </li>
 
 <li class="vocab-item">
 <button class="play-btn" onclick="playAudio('br')">🔊</button>
 <b>Brave</b> /breɪv/ — <i>Adjective</i>: not afraid of danger
-<audio id="br" src="/6b_lesson/ch4/audio/brave.mp3"></audio>
+<audio id="br" src="audio/brave.mp3"></audio>
 </li>
 
 <li class="vocab-item">
 <button class="play-btn" onclick="playAudio('inv')">🔊</button>
 <b>Invisible</b> /ɪnˈvɪzəbəl/ — <i>Adjective</i>: cannot be seen
-<audio id="inv" src="/6b_lesson/ch4/audio/invisible.mp3"></audio>
+<audio id="inv" src="audio/invisible.mp3"></audio>
 </li>
 
 <li class="vocab-item">
 <button class="play-btn" onclick="playAudio('cm')">🔊</button>
 <b>Control minds</b> /kənˈtroʊl maɪndz/ — <i>Verb phrase</i>: to control what others think or do
-<audio id="cm" src="/6b_lesson/ch4/audio/control-minds.mp3"></audio>
+<audio id="cm" src="audio/control-minds.mp3"></audio>
 </li>
 
 <li class="vocab-item">
 <button class="play-btn" onclick="playAudio('int')">🔊</button>
 <b>Intelligent</b> /ɪnˈtelɪdʒənt/ — <i>Adjective</i>: very smart
-<audio id="int" src="/6b_lesson/ch4/audio/intelligent.mp3"></audio>
+<audio id="int" src="audio/intelligent.mp3"></audio>
 </li>
 
 <li class="vocab-item">
 <button class="play-btn" onclick="playAudio('vil')">🔊</button>
 <b>Villains</b> /ˈvɪlənz/ — <i>Noun</i>: bad people or characters
-<audio id="vil" src="/6b_lesson/ch4/audio/villains.mp3"></audio>
+<audio id="vil" src="audio/villains.mp3"></audio>
 </li>
 
 <li class="vocab-item">
 <button class="play-btn" onclick="playAudio('sid')">🔊</button>
 <b>Secret identity</b> /ˈsiːkrət aɪˈdentəti/ — <i>Noun</i>: a hidden real identity
-<audio id="sid" src="/6b_lesson/ch4/audio/secret-identity.mp3"></audio>
+<audio id="sid" src="audio/secret-identity.mp3"></audio>
 </li>
 
 </ul>
