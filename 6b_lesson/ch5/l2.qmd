@@ -1,0 +1,94 @@
+---
+title: "Lesson 2: Past Perfect"
+format:
+    html:
+        toc: true
+        html-math-method: katex
+        css: /styles.css
+---
+
+## Lesson Overview
+**Content**: learning how to use the past perfect tense in English.
+
+In this lesson, you will be told specifically when to use the past perfect tense, and you will practice forming sentences using this tense.
+
+## Grammar Overview
+
+### What is the past perfect tense?
+
+The past perfect tense is used to describe an action that was **completed** before another action took place in the **past**. It is formed using "had" followed by the past participle of the verb.
+
+**Example:** I had finished my homework before I went to school.
+
+Let issus the sentence above, if I break it down according to the sentence action are following the below table:
+
+| Order | Action |
+|-------|--------|  
+| 1st   | I had finished my homework. |
+| 2nd   | I went to school. |
+
+**Note**: <span style="color:red; font-weight:600;"> Past Perfect is one way to tell the order of actions that happened in the past. Therefore, that means you do not always need a past perfect (all the time) to tell it. You can also use other ways to do it as well, like using prepositions (before, until, previous..) to tell the order.</span>
+
+**How?** I finished my homework before I went to school.
+
+### When to use the past perfect tense?
+1. To show that an action was completed before another action in the past.
+   - Example:
+        - They had spoken to her before she left the office.
+
+![](/img/past-perfect-timeline.png)
+
+### How to form the past perfect tense?
+The past perfect tense is formed using the auxiliary verb "had" followed by the past participle of the main verb.
+
+<span style='color:blue; font-weight:600;'>Formula:</span>
+**Subject + had + past participle of the verb**
+
+- Example Sentences:
+    - I had eaten breakfast.
+    - She had finished her homework.
+    - They had left the party.
+
+Now can you try to form some sentences using the past perfect tense? Form three sentences of past perfect tense using the verbs below:
+
+1. to arrive
+2. to see
+3. to complete
+
+<span style='color:blue'>Ohhh, How about Negative Sentences and Questions?</span>
+
+#### **(-): Negative Sentences**
+
+To form negative sentences in the past perfect tense, you simply add "not" after "had".
+
+<span style='color:blue; font-weight:600;'>Formula:</span>
+**Subject + had + not + past participle of the verb**
+
+- Example Sentences:
+    - I had not eaten breakfast.
+    - She had not finished her homework.
+    - They had not left the party.
+
+#### **(?): Questions**
+
+To form questions in the past perfect tense, you invert the subject and "had".
+
+<span style='color:blue; font-weight:600;'>Formula:</span>
+**Had + subject + past participle of the verb?**
+
+- Example Sentences:
+    - Had you eaten breakfast?
+    - Had she finished her homework?
+    - Had they left the party?
+
+## Helpful Resources
+Video and Articles to help you understand the past perfect tense better:
+
+- [Youtube](https://youtu.be/MjAEd8Me64A?si=eblZQybhjmRnLBg0)
+- [Past Perfect Tense - English Grammar](https://www.grammarly.com/blog/grammar/past-perfect/)
+- [Practice with Past Perfect Tense](https://test-english.com/grammar-points/a2/past-perfect/2/)
+
+## Mini Practice Quiz
+
+Under_Construction........
+

@@ -64,6 +64,14 @@ This course focuses on improving communication skills, grammar accuracy, and con
 | [L3: Master Mind (Story)]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
 | [L4: Story Comprehension]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
 | [L5: Superhero Interview]() | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+
+### 📘 Chapter 5: Powerful Earth!
+
+| Lesson | Exercise | Solution | Remark |
+|--------|----------|----------|--------|
+| [L1: ](6b_lesson/ch4/l1.html) | [Ex1](6b_lesson/ch4/e1.html) | [S1](6b_lesson/ch4/s1.html) | <span class="status done">Completed</span> |
+| [L2: Past Perfect](6b_lesson/ch5/l2.html) | <span class='ex na'>N/A</span> | <span class='ex na'>N/A</span> | <span class="status loading">Loading...</span> |
+
 ## Course Rules
 
 - Students are expected to attend classes regularly

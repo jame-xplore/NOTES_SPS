@@ -2,10 +2,10 @@
 ---
 title: "Lesson 1: Fantastic Family"
 format:
-    html:
-        toc: true
-        html-math-method: katex
-        css: ../styles.css
+  html:
+      toc: true
+      html-math-method: katex
+      css: ../styles.css
 ---
 
 ## Lesson Overview
