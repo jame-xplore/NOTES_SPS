@@ -1,10 +1,10 @@
 ---
 title: "Lesson 2: Past Perfect"
+slug: ch5-lesson2-past-perfect
 format:
     html:
         toc: true
         html-math-method: katex
-        css: ./styles.css
 ---
 
 ## Lesson Overview
@@ -36,7 +36,7 @@ Let issus the sentence above, if I break it down according to the sentence actio
    - Example:
         - They had spoken to her before she left the office.
 
-![](/img/past-perfect-timeline.png)
+![](/6b_lesson/ch5/img/past-perfect-timeline.png)
 
 ### How to form the past perfect tense?
 The past perfect tense is formed using the auxiliary verb "had" followed by the past participle of the main verb.

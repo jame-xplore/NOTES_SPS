@@ -1,15 +1,14 @@
 ---
-page-layout: full
-format:
-  html:
-    theme: cosmo
-    css: styles.css
+title: "General English Program - Level 6B"
+subtitle: "English Teaching Materials"
+description: "Interactive English lessons with vocabulary, grammar exercises, and audio materials"
+page-layout: article
 ---
 
 ```{=html}
 <div class="hero">
   <div class="hero-content">
-    <img src="img/logo-sps.png" alt="School Logo" class="hero-logo">
+    <img src="/assets/img/logo-sps.png" alt="School Logo" class="hero-logo">
 
     <h1>General English Program</h1>
     <p class="subtitle">Level 6B</p>
@@ -85,7 +84,3 @@ This course focuses on improving communication skills, grammar accuracy, and con
 - Cambridge Dictionary
 - Grammarly
 - BBC Learning English
-
-## Contact
-
-For questions or support, please contact the instructor during class hours or via the official communication channel.

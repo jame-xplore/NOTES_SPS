@@ -1,0 +1,92 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - assets/
+    - 6b_lesson/
+    - styles.css
+
+website:
+  title: "General English Program - Level 6B"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: /index.html
+      - text: "Chapters"
+        menu:
+          - text: "Chapter 4: Superheroes"
+            href: /6b_lesson/ch4/l1.html
+          - text: "Chapter 5: Powerful Earth"
+            href: /6b_lesson/ch5/l2.html
+    right:
+      - text: "GitHub"
+        href: "https://github.com/jame-xplore/NOTES_SPS"
+        aria-label: GitHub repository
+
+  page-footer:
+    left: "© 2026 Phoeun Rajame | General English Program - Level 6B"
+    right: 
+      - text: "Report an issue"
+        href: "https://github.com/jame-xplore/NOTES_SPS/issues"
+      - text: "Contact"
+        href: "mailto:instructor@example.com"
+
+  sidebar:
+    style: docked
+    pinned: true
+    collapse-level: 2
+    contents:
+      - section: "Course Materials"
+        contents:
+          - section: "Chapter 4: Superheroes, Special Powers!"
+            contents:
+              - 6b_lesson/ch4/l1.qmd
+          - section: "Chapter 5: Powerful Earth!"
+            contents:
+              - 6b_lesson/ch5/l2.qmd
+
+format:
+  html:
+    # Theme and styling
+    theme: cosmo
+    css: styles.css
+    
+    # Layout and navigation
+    toc: true
+    toc-expand: 2
+    toc-title: "Contents"
+    toc-location: left
+    page-layout: article
+    
+    # HTML options
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
+    
+    # Code highlighting
+    highlight-style: a11y-dark
+    code-line-numbers: true
+    code-copy: true
+    
+    # Math support
+    html-math-method: katex
+    
+    # Responsive design
+    viewport-width: 1000px
+    
+    # Metadata
+    link-external-newwindow: true
+    link-external-icon: true
+
+# Google Analytics integration (replace with your tracking ID)
+google-analytics:
+  tracking-id: "G-LG1TMM4GD0"
+  anonymize-ip: true
+
+# Render options
+execute:
+  freeze: auto
+  cache: true

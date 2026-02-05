@@ -3,6 +3,14 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Quarto build output
+_site/
+_quarto/
+.quarto/
+*.html
+index_files/
+*_files/
+
 # User-specific files
 *.rsuser
 *.suo
@@ -416,3 +424,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+/.quarto/
+**/*.quarto_ipynb

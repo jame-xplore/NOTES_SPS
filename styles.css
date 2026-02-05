@@ -1,32 +1,64 @@
+/* ============================================
+   ROOT COLOR SCHEME (Light Mode Only)
+   ============================================ */
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --accent-color: #0d6efd;
+  --success-color: #198754;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
 .hero {
   width: 100vw;
   min-height: 20vh;
   margin-left: calc(-50vw + 50%);
   background: linear-gradient(120deg, #cb343e, #2a1673);
   color: white;
-
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .hero-logo {
-  width: 90px;          /* adjust size here */
+  width: 90px;
   height: auto;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+  transition: transform 0.3s ease;
 }
 
-/* Optional: responsive logo */
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
   .hero-logo {
     width: 70px;
   }
 }
-
-/* fix logo */
-
 
 .hero-content {
   max-width: 900px;
@@ -36,15 +68,18 @@
 .hero h1 {
   font-size: clamp(2rem, 3vw, 3.8rem);
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
+
 .hero-spacer {
-  height: 5vh; /* MUST match hero height */
+  height: 5vh;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  opacity: 0.9;
+  opacity: 0.95;
   margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
 .meta {
@@ -52,32 +87,155 @@
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
+  font-size: 0.95rem;
 }
 
 .instructor,
 .date {
-  font-size: 1rem;
   opacity: 0.9;
 }
 
+/* ============================================
+   STATUS BADGES
+   ============================================ */
+
 .status {
-  padding: 0.2rem 0.6rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
 }
 
 .status.done {
-  background: #e6f4ea;
-  color: #137333;
+  background-color: #d4edda;
+  color: #155724;
 }
 
 .status.loading {
-  background: #f1f3f4;
-  color: #6b7280;
+  background-color: #fff3cd;
+  color: #856404;
+  animation: pulse 2s infinite;
 }
 
 .ex.na {
-  color: #9ca3af;
+  color: var(--text-secondary);
   font-style: italic;
 }
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+h3 {
+  color:rgb(161, 18, 144)
+}
+
+h4 {
+  color: var(--success-color);
+}
+
+/* ============================================
+   CENTER MAIN CONTENT AREA
+   ============================================ */
+
+/* All pages use page-layout: article with sidebar navigation.
+   Content is centered with a fixed reading width (900px). */
+
+/* Center the quarto container for article layout pages */
+.page-layout-article #quarto-content {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/* Center the content area within article layout */
+.page-layout-article main.content {
+  max-width: 900px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 2rem;
+}
+
+/* Ensure the page-columns wrapper doesn't override */
+.page-layout-article .page-columns {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Keep sidebar in its normal position (left docked) */
+#quarto-sidebar {
+  margin-left: 0 !important;
+}
+
+/* Hide unused margin sidebar (right column for asides/footnotes) */
+#quarto-margin-sidebar {
+  display: none;
+}
+
+/* Allow main content to expand into unused margin space */
+.page-layout-article .page-columns {
+  grid-template-columns: 1fr;
+}
+
+/* ============================================
+   VOCABULARY LIST AUDIO BUTTONS
+   ============================================ */
+
+/* Clean vocabulary list styling */
+.vocab-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.vocab-item {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-left: 3px solid var(--accent-color);
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+/* Play button styling */
+.play-btn {
+  background: var(--accent-color);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  padding: 0;
+  line-height: 1;
+}
+
+.play-btn:hover {
+  background: #0b5ed7;
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.3);
+}
+
+.play-btn:active {
+  transform: scale(0.95);
+}
+
+/* Hide audio elements */
+.vocab-item audio {
+  display: none;
+}
+
