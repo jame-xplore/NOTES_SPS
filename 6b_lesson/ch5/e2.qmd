@@ -133,24 +133,46 @@ Write your own past perfect sentences and click **Check with AI**.
 <script>
 async function checkWithAI(){
 
-  const sentences = [
-    document.getElementById("s1").value,
-    document.getElementById("s2").value,
-    document.getElementById("s3").value,
-    document.getElementById("s4").value,
-    document.getElementById("s5").value
-  ];
+  const feedbackBox = document.getElementById("ai-feedback");
+  feedbackBox.innerHTML = "🤖 Teacher is checking... ⏳";
 
-  document.getElementById("ai-feedback").innerHTML = "Checking... ⏳";
+  const ids = ["s1","s2","s3","s4","s5"];
 
-  const res = await fetch("https://YOUR-AI-ENDPOINT/check", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ sentences })
+  // ⭐ Create parallel requests (FAST)
+  const requests = ids.map(async (id) => {
+
+    const sentence = document.getElementById(id).value.trim();
+    if(!sentence) return "";
+
+    const res = await fetch("https://grammar-checker.rajameamser.workers.dev", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ sentence, lesson: "Second Conditional" })
+    });
+
+    const data = await res.json();
+    const result = data.result || "";
+
+    // ⭐ Detect status from AI response
+    let isCorrect = false;
+
+    if(result.toLowerCase().includes("status: correct")){
+      isCorrect = true;
+    }
+
+    const colorClass = isCorrect ? "ai-correct" : "ai-incorrect";
+
+    return `
+      <div class="ai-card ${colorClass}">
+        <div class="ai-student"><b>Your sentence:</b> ${sentence}</div>
+        <pre class="ai-response">${result}</pre>
+      </div>
+    `;
   });
 
-  const data = await res.json();
-  document.getElementById("ai-feedback").innerHTML = data.feedback;
+  const results = await Promise.all(requests);
+
+  feedbackBox.innerHTML = results.join("") || "No sentence entered.";
 }
 </script>
 ```
@@ -166,7 +188,7 @@ async function checkWithAI(){
 
 function checkMCQ(btn, correct){
   const text = btn.innerText.trim();
-  if(text.startsWith(correct)){
+  if(text.startsWith(Correct)){
     btn.style.background = "#c8f7c5";
   }else{
     btn.style.background = "#ffd6d6";
@@ -203,6 +225,36 @@ function toggleAnswers(){
   margin:4px;
   padding:6px 10px;
   cursor:pointer;
+}
+
+/* ⭐ Teacher AI styling */
+
+.ai-card{
+  margin:12px 0;
+  padding:12px;
+  border-radius:10px;
+  border-left:6px solid;
+  background: var(--bs-body-bg, #f8f9fa);
+}
+
+.ai-correct{
+  border-color:#2ecc71;
+  background:#eafaf1;
+}
+
+.ai-incorrect{
+  border-color:#e74c3c;
+  background:#fdecea;
+}
+
+.ai-student{
+  margin-bottom:6px;
+  font-weight:500;
+}
+
+.ai-response{
+  white-space:pre-wrap;
+  font-size:0.95em;
 }
 
 </style>

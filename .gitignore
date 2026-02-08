@@ -427,3 +427,6 @@ FodyWeavers.xsd
 
 /.quarto/
 **/*.quarto_ipynb
+
+grammar-checker/
+
