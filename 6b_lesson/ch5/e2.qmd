@@ -188,7 +188,7 @@ async function checkWithAI(){
 
 function checkMCQ(btn, correct){
   const text = btn.innerText.trim();
-  if(text.startsWith(Correct)){
+  if(text.startsWith(correct)){
     btn.style.background = "#c8f7c5";
   }else{
     btn.style.background = "#ffd6d6";
