@@ -147,7 +147,7 @@ async function checkWithAI(){
     const res = await fetch("https://grammar-checker.rajameamser.workers.dev", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ sentence, lesson: "Second Conditional" })
+      body: JSON.stringify({ sentence, lesson: "Past Perfect" })
     });
 
     const data = await res.json();
