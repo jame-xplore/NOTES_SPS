@@ -179,7 +179,7 @@ async function checkWithAI(){
 
 ## Back to Lesson
 
-[⬅ Return to Past Perfect Lesson](l2.qmd)
+[⬅ Return to Past Perfect Lesson](./l2.qmd)
 
 ---
 
