@@ -81,12 +81,7 @@ format:
     # Metadata
     link-external-newwindow: true
     link-external-icon: true
-
-# Google Analytics integration (replace with your tracking ID)
-google-analytics:
-  tracking-id: "G-LG1TMM4GD0"
-  anonymize-ip: true
-
+    
 # Render options
 execute:
   freeze: auto
