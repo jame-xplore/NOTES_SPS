@@ -8,18 +8,19 @@ project:
 
 website:
   title: "General English Program - Level 6B"
+  site-url: https://jame-xplore.github.io/NOTES_SPS/
   navbar:
     background: primary
     search: true
     left:
       - text: "Home"
-        href: /index.html
+        href: index.html
       - text: "Chapters"
         menu:
           - text: "Chapter 4: Superheroes"
-            href: /index.html#ch4
+            href: index.html#ch4
           - text: "Chapter 5: Powerful Earth"
-            href: /index.html#ch5
+            href: index.html#ch5
     right:
       - text: "GitHub"
         href: "https://github.com/jame-xplore/NOTES_SPS"
@@ -81,7 +82,7 @@ format:
     # Metadata
     link-external-newwindow: true
     link-external-icon: true
-    
+
 # Render options
 execute:
   freeze: auto
