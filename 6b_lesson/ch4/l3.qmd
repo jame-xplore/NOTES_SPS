@@ -1,0 +1,12 @@
+---
+title: "Lesson 3: Word From Story"
+slug: ch4-lesson3-word-from-story
+format:
+    html:
+        toc: true
+        html-math-method: katex
+---
+
+# Lesson Overview
+In this lesson, we will explore various words inside the story "Master Mind". We will learn new vocabulary and practice using them in sentences.
+
