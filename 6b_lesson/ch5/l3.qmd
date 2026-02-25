@@ -1,0 +1,28 @@
+---
+title: "Lesson 3: Past vs Present (Perfect Question)"
+slug: ch5-lesson3-past-vs-present
+format:
+  html:
+      toc: true
+      html-math-method: katex
+---
+
+## Lesson Slides
+
+```{=html}
+<iframe
+  src="past_vs_present-PERFECT.pdf"
+  width="100%"
+  height="650px"
+  style="border:none;">
+</iframe>
+```
+---
+
+## Optional: Open in full screen
+
+```{=html}
+<a href="past_vs_present-PERFECT.pdf" target="_blank">
+🔍 Open Slides Full Screen
+</a>
+```

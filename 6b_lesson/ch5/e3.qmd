@@ -1,0 +1,177 @@
+---
+title: "Past Perfect vs Present Perfect Practice"
+format:
+  html:
+    toc: true
+---
+
+## Interactive Practice — Past Perfect vs Present Perfect
+
+### ⭐ Remember
+
+<span style="color:blue; font-weight:600;">
+Past Perfect → Had + Subject + past participle (past action before another past action) 
+</span>
+
+<span style="color:green; font-weight:600;">
+Present Perfect → have/has + Subject + past participle (past action with present relevance)
+</span>
+
+---
+
+## Part A — Choose the Correct Answer
+
+```{=html}
+<div class="quiz-box">
+<p>1. ____ the rescue teams ____ the flooded villages yet?</p>
+<button onclick="checkMCQ(this,'b')">a) did/reach</button>
+<button onclick="checkMCQ(this,'b')">b) have/reached</button>
+<button onclick="checkMCQ(this,'b')">c) had/reached</button>
+</div>
+
+<div class="quiz-box">
+<p>2. ____ the families ____ the area before the hurricane arrived?</p>
+<button onclick="checkMCQ(this,'c')">a) have/left</button>
+<button onclick="checkMCQ(this,'c')">b) leave</button>
+<button onclick="checkMCQ(this,'c')">c) had/left</button>
+</div>
+
+<div class="quiz-box">
+<p>3. ____ you ____ an emergency kit for your home?</p>
+<button onclick="checkMCQ(this,'a')">a) have/prepared</button>
+<button onclick="checkMCQ(this,'a')">b) had/prepared</button>
+<button onclick="checkMCQ(this,'a')">c) prepare</button>
+</div>
+
+<div class="quiz-box">
+<p>4. ____ the warning siren ____ before the earthquake started?</p>
+<button onclick="checkMCQ(this,'c')">a) has/sounded</button>
+<button onclick="checkMCQ(this,'c')">b) sounds</button>
+<button onclick="checkMCQ(this,'c')">c) had/sounded</button>
+</div>
+
+<div class="quiz-box">
+<p>5. ____ scientists ____ any new volcano activity this year?</p>
+<button onclick="checkMCQ(this,'a')">a) have/discovered</button>
+<button onclick="checkMCQ(this,'a')">b) had/discovered</button>
+<button onclick="checkMCQ(this,'a')">c) discover</button>
+</div>
+
+<div class="quiz-box">
+<p>6. ____ the river ____ before the bridge collapsed?</p>
+<button onclick="checkMCQ(this,'c')">a) has/risen</button>
+<button onclick="checkMCQ(this,'c')">b) rises</button>
+<button onclick="checkMCQ(this,'c')">c) had/risen</button>
+</div>
+
+<div class="quiz-box">
+<p>7. ____ the villagers ____ their houses after the flood?</p>
+<button onclick="checkMCQ(this,'a')">a) have/rebuilt</button>
+<button onclick="checkMCQ(this,'a')">b) had/rebuilt</button>
+<button onclick="checkMCQ(this,'a')">c) rebuild</button>
+</div>
+
+<div class="quiz-box">
+<p>8. ____ the storm ____ the power lines before nightfall?</p>
+<button onclick="checkMCQ(this,'c')">a) has/damaged</button>
+<button onclick="checkMCQ(this,'c')">b) damages</button>
+<button onclick="checkMCQ(this,'c')">c) had/damaged</button>
+</div>
+
+<div class="quiz-box">
+<p>9. ____ you ever ____ a strong earthquake?</p>
+<button onclick="checkMCQ(this,'a')">a) have/experienced</button>
+<button onclick="checkMCQ(this,'a')">b) had/experienced</button>
+<button onclick="checkMCQ(this,'a')">c) experience</button>
+</div>
+
+<div class="quiz-box">
+<p>10. ____ the teachers ____ the students to safety before the tsunami hit?</p>
+<button onclick="checkMCQ(this,'c')">a) have/moved</button>
+<button onclick="checkMCQ(this,'c')">b) move</button>
+<button onclick="checkMCQ(this,'c')">c) had/moved</button>
+</div>
+
+
+```
+
+---
+
+## Part B — Fill in the Blank
+
+Use **present perfect** OR **past perfect**. (Has/have or Had)
+
+```{=html}
+<p>1.
+<input id="q1">
+the city experienced flood this year?
+<button onclick="checkText('q1','has')">Check</button>
+<span id="r1"></span>
+</p>
+
+<p>2.
+<input id="q2">
+people left their homes by the time the warning sounded?
+<button onclick="checkText('q2','had')">Check</button>
+<span id="r2"></span>
+</p>
+
+<p>3.
+<input id="q3">
+scientists studied volcano activity for many years?
+<button onclick="checkText('q3','have')">Check</button>
+<span id="r3"></span>
+</p>
+
+<p>4.
+<input id="q4">
+the river risen before the bridge collapsed?
+<button onclick="checkText('q4','had')">Check</button>
+<span id="r4"></span>
+</p>
+
+<p>5.
+<input id="q5">
+you prepared emergency kits recently?
+<button onclick="checkText('q5','have')">Check</button>
+<span id="r5"></span>
+</p>
+```
+
+```{=html}
+<script>
+function checkMCQ(btn, correct){
+  const text = btn.innerText.trim();
+  if(text.startsWith(correct)){
+    btn.style.background = "#c8f7c5";
+  }else{
+    btn.style.background = "#ffd6d6";
+  }
+}
+
+function checkText(id, answer){
+  const input = document.getElementById(id);
+  const result = document.getElementById("r" + id.replace("q", ""));
+  if(input.value.toLowerCase().trim() === answer){
+    result.innerHTML = " ✅";
+  }else{
+    result.innerHTML = " ❌";
+  }
+}
+</script>
+
+<style>
+.quiz-box{
+  margin:12px 0;
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+
+.quiz-box button{
+  margin:4px;
+  padding:6px 10px;
+  cursor:pointer;
+}
+</style>
+```

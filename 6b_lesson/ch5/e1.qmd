@@ -1,0 +1,147 @@
+---
+title: "Lesson 1: Disaster Plan"
+slug: ch5-exercise1-disaster-plan-vocabulary
+format:
+    html:
+        toc: true
+        html-math-method: katex
+---
+
+## Practice Exercises
+
+### 1. Complete the words based on the meanings provided:
+
+```{=html}
+<table>
+  <tr>
+    <th>Meaning</th>
+    <th>Complete the word</th>
+    <th>Feedback</th>
+  </tr>
+
+  <tr>
+    <td>A violent storm with strong wind and rain</td>
+    <td><input id="a1" placeholder="Type the word"></td>
+    <td id="f1"></td>
+  </tr>
+
+  <tr>
+    <td>A sudden shaking of the ground</td>
+    <td><input id="a2" placeholder="Type the word"></td>
+    <td id="f2"></td>
+  </tr>
+
+  <tr>
+    <td>Water covering land that is usually dry</td>
+    <td><input id="a3" placeholder="Type the word"></td>
+    <td id="f3"></td>
+  </tr>
+
+  <tr>
+    <td>A huge ocean wave caused by an underwater earthquake</td>
+    <td><input id="a4" placeholder="Type the word"></td>
+    <td id="f4"></td>
+  </tr>
+
+  <tr>
+    <td>A message that tells people about danger</td>
+    <td><input id="a5" placeholder="Type the word"></td>
+    <td id="f5"></td>
+  </tr>
+</table>
+<button onclick="checkAnswers()">Check Answers</button>
+
+<script>
+  function checkAnswers() {
+    const answers = [
+      "hurricane",
+      "earthquake",
+      "flood",
+      "tsunami",
+      "warning"
+    ];
+
+    answers.forEach((correct, i) => {
+      const input = document.getElementById("a" + (i + 1)).value
+        .toLowerCase()
+        .trim();
+      const feedback = document.getElementById("f" + (i + 1));
+
+      if (input === correct) {
+        feedback.innerHTML = "✔ Correct";
+        feedback.className = "correct";
+      } else {
+        feedback.innerHTML = "✘ Wrong";
+        feedback.className = "wrong";
+      }
+    });
+  }
+</script>
+```
+
+### 2. Fill in the blanks in the sentences using the vocabulary words:
+
+```{=html}
+<div class="question">
+  1. The strong winds and rain from the 
+  <input id="q1" placeholder="type answer"> 
+  damaged many houses.
+  <span id="fb1"></span>
+</div>
+
+<div class="question">
+  2. The ground began to 
+  <input id="q2" placeholder="type answer"> 
+  during the earthquake.
+  <span id="fb2"></span>
+</div>
+
+<div class="question">
+  3. Heavy rain caused a 
+  <input id="q3" placeholder="type answer"> 
+  in the village.
+  <span id="fb3"></span>
+</div>
+
+<div class="question">
+  4. The loud 
+  <input id="q4" placeholder="type answer"> 
+  helped people move to a safe place.
+  <span id="fb4"></span>
+</div>
+
+<div class="question">
+  5. Parents try to 
+  <input id="q5" placeholder="type answer"> 
+  their children during dangerous situations.
+  <span id="fb5"></span>
+</div>
+
+<button onclick="checkBlanks()">Check Answers</button>
+
+<script>
+  function checkBlanks() {
+    const answers = [
+      "hurricane",
+      "shake",
+      "flood",
+      "warning",
+      "protect"
+    ];
+
+    answers.forEach((correct, i) => {
+      const input = document.getElementById("q" + (i + 1))
+        .value.toLowerCase().trim();
+      const feedback = document.getElementById("fb" + (i + 1));
+
+      if (input === correct) {
+        feedback.innerHTML = "✔ Correct";
+        feedback.className = "correct";
+      } else {
+        feedback.innerHTML = "✘ Wrong";
+        feedback.className = "wrong";
+      }
+    });
+  }
+</script>
+```
