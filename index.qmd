@@ -66,6 +66,13 @@ This course focuses on improving communication skills, grammar accuracy, and con
 | [L2: Past Perfect](6b_lesson/ch5/l2.html) | [Ex2](6b_lesson/ch5/e2.qmd) | <span class="status done">Completed</span> |
 | [L3: Past vs Present (Perfect Question)](6b_lesson/ch5/l3.html) | [Ex3](6b_lesson/ch5/e3.qmd) | <span class="status done">Completed</span> |
 
+### 📘 Chapter 6: Showtime {#ch6}
+
+| Lesson | Exercise | Remark |
+|--------|----------|--------|
+| [L1: Calling all superstars](6b_lesson/ch6/l1.html) | [Ex1] | <span class="status loading">In Progress</span> |
+
+
 ## Course Rules
 
 - Students are expected to attend classes regularly
